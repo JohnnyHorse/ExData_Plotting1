@@ -28,7 +28,7 @@ dev.off()
 plot(da$Sub_metering_1~da$Date, main="", ylab = "Energy sub metering", xlab = "", col="black",type="l")
 points(da$Sub_metering_2~da$Date, col="red",type="l")
 points(da$Sub_metering_3~da$Date, col="blue",type="l")
-legend("topright", col=c("black", "red", "blue"), lwd=1 , c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend(1170380000,39.5, col=c("black", "red", "blue"),lwd=1,cex=0.8,bty = "n",c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 dev.copy(png, file="plot3.png", height=480, width=480)
 dev.off()
 
@@ -42,7 +42,7 @@ plot(da$Voltage~da$Date, main="", xlab = "datetime", ylab = "Voltage", type = "l
 plot(da$Sub_metering_1~da$Date, main="", ylab = "Energy sub metering", xlab = "", col="black",type="l")
 points(da$Sub_metering_2~da$Date, col="red",type="l")
 points(da$Sub_metering_3~da$Date, col="blue",type="l")
-legend("topright", col=c("black", "red", "blue"), lwd=1 , bty="n", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),cex=0.6)
+legend(1170360000,39.5, col=c("black", "red", "blue"),lwd=1,cex=0.6,bty = "n",c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 #4
 plot(da$Global_reactive_power~da$Date, main="", ylab = "Global_reactive_power", xlab = "datetime", col="black",type="l")
 dev.copy(png, file="plot4.png", height=480, width=480)
